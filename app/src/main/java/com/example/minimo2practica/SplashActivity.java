@@ -23,6 +23,6 @@ public class SplashActivity extends AppCompatActivity {
                 Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
-        }, 3000);
+        }, 3000);//La splash activity espera 3000 ms --> 3s
     }
 }

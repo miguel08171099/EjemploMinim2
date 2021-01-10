@@ -13,18 +13,21 @@ public class LoginActivity extends AppCompatActivity {
     SharedPreferences mySharedPreferences;
     String user;
 
+    //Funció per a agafar l'usuari del textview
     public String getUser(View v){
         EditText usernameContainer;
         usernameContainer = (EditText)findViewById(R.id.editTextTextPersonName);
         return usernameContainer.getText().toString();
     }
 
+    //Funció per a agafar la contrasenya del textview
     public String getPassword(View v){
         EditText usernameContainer;
         usernameContainer = (EditText)findViewById(R.id.editTextTextPassword);
         return usernameContainer.getText().toString();
     }
 
+    //Quan s'inicia el login guarda les sharedpreferences, a no ser que estiguin plenes que llavors obre la MainActivity directament
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
             openMainActivity();
         }
     }
+    // Funció de login
     public void onLoginClick(View v){
         user = getUser(v);
         String password = getPassword(v);

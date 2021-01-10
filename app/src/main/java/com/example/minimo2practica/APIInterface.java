@@ -9,6 +9,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 
+// Gets y Post que funcionen igual que les APIs de java
 public interface APIInterface {
     @GET("/api/dataset/museus/format/json/")
     Call<Museums> getMuseums();

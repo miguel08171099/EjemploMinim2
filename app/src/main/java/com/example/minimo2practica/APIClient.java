@@ -16,7 +16,7 @@ public class APIClient {
 
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://do.diba.cat/") //lo unico que tengo que pensar
+                .baseUrl("https://do.diba.cat/") //Cambiar solo la URL en la APIClient
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();
